@@ -650,7 +650,7 @@
 				TargetAttributes = {
 					CAB6604E1D09B9D600037854 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = EYJDE3N63W;
+						DevelopmentTeam = 3S473PJ3JQ;
 					};
 					CAB660671D09B9D600037854 = {
 						CreatedOnToolsVersion = 7.3;
@@ -906,6 +906,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/GC4iOS/Supporting Files/Entitlements.plist";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3S473PJ3JQ;
 				ENABLE_BITCODE = NO;
 				GCC_OPTIMIZATION_LEVEL = fast;
 				HEADER_SEARCH_PATHS = (
@@ -920,7 +921,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Dolphin",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.EpicDarknesGamer.GC4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BattletoiletGameCube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = arm64;
 			};
@@ -938,6 +939,7 @@
 				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/GC4iOS/Supporting Files/Entitlements.plist";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3S473PJ3JQ;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/GC4iOS",
@@ -952,7 +954,7 @@
 					"$(PROJECT_DIR)/Dolphin",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.EpicDarknesGamer.GC4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BattletoiletGameCube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = arm64;
 			};

@@ -160,20 +160,21 @@ void Host_ShowVideoConfig(void*, const std::string&, const std::string&)
 
 - (void)openRomAtPath:(NSString* )path inLayer:(CAEAGLLayer *)layer
 {
-    renderLayer = layer;
-    NSLog(@"Loading game at path: %@", path);
-    UICommon::Init();
-    SConfig::GetInstance().m_FrameSkip = 9;
-    if (BootManager::BootCore([path UTF8String]))
-    {
-        NSLog(@"Booted Core");
-    }
-    else
-    {
-        NSLog(@"Unable to boot");
-        return;
-    }
+   
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        renderLayer = layer;
+        NSLog(@"Loading game at path: %@", path);
+        UICommon::Init();
+        SConfig::GetInstance().m_FrameSkip = 9;
+        if (BootManager::BootCore([path UTF8String]))
+        {
+            NSLog(@"Booted Core");
+        }
+        else
+        {
+            NSLog(@"Unable to boot");
+            return;
+        }
         while (!Core::IsRunning())
         {
             NSLog(@"Waiting for run");
